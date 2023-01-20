@@ -1,0 +1,16 @@
+.. _whatsnew_0150:
+
+v0.1.5 (June 23, 2017)
+------------------------
+
+* Added ability to check for regular or irregular timestamps in check_timestamp.
+* Added probability of detection and false alarm metrics.
+* Added check_delta method to check bounds on the difference between max and min data 
+  values within a rolling window.
+* Added graphics method to create interactive graphics using plotly.
+* Added graphics method to create day-of-year heatmaps.
+* Method named plot_colorblock changed to plot_heatmap (API change).
+* Added data acquisition method to transfer data from sensors to an SQL database.
+* Added dashboard example that uses Pandas Styling to color code tables based on values.
+* Added graphics tests.
+* Updated documentation.

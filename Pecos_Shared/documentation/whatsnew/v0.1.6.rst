@@ -1,0 +1,6 @@
+.. _whatsnew_0160:
+
+v0.1.6 (August 14, 2017)
+------------------------
+
+* Added readme and license file to manifest to fix pip install

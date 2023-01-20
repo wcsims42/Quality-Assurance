@@ -1,0 +1,20 @@
+.. _whatsnew_0170:
+
+v0.1.7 (June 2, 2018)
+------------------------
+
+* Added quality control test to identify outliers.
+* Bug fix to allow for sub-second data frequency.
+* Dropped 'System Name' from the analysis and test results, this added assumptions about column names 
+  in the code.
+* Changed 'Start Date' and 'End Date' to 'Start Time' and 'End Time' in the test results.
+* New data added to a PerformanceMonitoring object using add_dataframe now overrides 
+  existing data if there are shared indexes and columns.
+* Removed add_signal method, use add_dataframe instead.
+* Adding a translation dictionary to the analysis is now optional. A 1:1 map of 
+  column names is generated when data is added to the PerformanceMonitoring object 
+  using add_dataframe.
+* Added Python 3.6 tests.
+* Removed Python 3.4 tests (Pandas dropped support for Python 3.4 with version 0.21.0).
+* Updates to check_range requires Pandas 0.23.0.
+* Updated documentation, added doctests.

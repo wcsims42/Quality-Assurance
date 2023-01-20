@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	
+    <title>Pecos Monitoring Report</title>
+    
+		<meta charset="UTF-8" />
+	
+
+</head>
+<body>
+	
+<table border="0" width="100%">
+<col style="width:70%">
+<col style="width:30%">
+<tr>
+<td align="left" valign="center">
+
+    <H2>Pecos Monitoring Report</H2>
+
+</td>
+<td align="right" valign="center">
+</td>
+</tr>
+</table>
+<hr>
+
+Data start time: 2023-01-12 16:26:00 <br>
+Data end time:  2023-01-13 14:03:00 <br>
+Number of variables: 14 <br>    
+Number of test failures: 125 <br>   
+<br>
+
+
+    
+        <img src="custom.png" alt="Image not loaded" width="800"><br>
+    
+
+
+
+    <H3>Performance Metrics:</H3>
+    <table border="1" class="dataframe">
+  <tbody>
+    <tr>
+      <th>HF1 - Unshaded (W/m2)</th>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>HF2 - Shaded (W/m2)</th>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>HF3 - Front Panel (W/m2)</th>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>HF4 - Back Panel (W/m2)</th>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>HF5 - Structure (W/m2)</th>
+      <td>0.836442</td>
+    </tr>
+    <tr>
+      <th>T1 - Unshaded (degC)</th>
+      <td>0.982783</td>
+    </tr>
+    <tr>
+      <th>T2 - Shaded (degC)</th>
+      <td>0.987088</td>
+    </tr>
+    <tr>
+      <th>T3 - Front Panel (degC)</th>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>T4 - Back Panel (degC)</th>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>T5 - Structure (degC)</th>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>Pyranometer (W/m2)</th>
+      <td>0.835007</td>
+    </tr>
+    <tr>
+      <th>Wind Direction (Degrees)</th>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>Wind Speed (m/s)</th>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>Air Temperature (degC)</th>
+      <td>0.998565</td>
+    </tr>
+  </tbody>
+</table>
+    <br>
+
+
+
+    <H3>Test Results:</H3>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: left;">
+      <th></th>
+      <th>Variable Name</th>
+      <th>Start Time</th>
+      <th>End Time</th>
+      <th>Timesteps</th>
+      <th>Error Flag</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>Air Temperature (degC)</td>
+      <td>2023-01-12 19:02:00</td>
+      <td>2023-01-12 19:02:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 3</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-12 19:02:00</td>
+      <td>2023-01-12 19:02:00</td>
+      <td>1</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-12 19:06:00</td>
+      <td>2023-01-12 19:06:00</td>
+      <td>1</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 08:51:00</td>
+      <td>2023-01-13 08:51:00</td>
+      <td>1</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 08:56:00</td>
+      <td>2023-01-13 08:56:00</td>
+      <td>1</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 09:00:00</td>
+      <td>2023-01-13 09:03:00</td>
+      <td>4</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 09:05:00</td>
+      <td>2023-01-13 09:09:00</td>
+      <td>5</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 09:11:00</td>
+      <td>2023-01-13 09:19:00</td>
+      <td>9</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 09:21:00</td>
+      <td>2023-01-13 09:23:00</td>
+      <td>3</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 09:25:00</td>
+      <td>2023-01-13 09:28:00</td>
+      <td>4</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 09:30:00</td>
+      <td>2023-01-13 09:33:00</td>
+      <td>4</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 09:38:00</td>
+      <td>2023-01-13 09:39:00</td>
+      <td>2</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 09:43:00</td>
+      <td>2023-01-13 09:43:00</td>
+      <td>1</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 09:50:00</td>
+      <td>2023-01-13 09:50:00</td>
+      <td>1</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 09:56:00</td>
+      <td>2023-01-13 09:56:00</td>
+      <td>1</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 10:04:00</td>
+      <td>2023-01-13 10:04:00</td>
+      <td>1</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 10:09:00</td>
+      <td>2023-01-13 10:11:00</td>
+      <td>3</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 10:20:00</td>
+      <td>2023-01-13 10:21:00</td>
+      <td>2</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 10:27:00</td>
+      <td>2023-01-13 10:28:00</td>
+      <td>2</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 10:32:00</td>
+      <td>2023-01-13 10:32:00</td>
+      <td>1</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 10:34:00</td>
+      <td>2023-01-13 10:35:00</td>
+      <td>2</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 10:37:00</td>
+      <td>2023-01-13 10:37:00</td>
+      <td>1</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 10:40:00</td>
+      <td>2023-01-13 10:40:00</td>
+      <td>1</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 10:48:00</td>
+      <td>2023-01-13 10:48:00</td>
+      <td>1</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 10:58:00</td>
+      <td>2023-01-13 10:58:00</td>
+      <td>1</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 11:04:00</td>
+      <td>2023-01-13 11:04:00</td>
+      <td>1</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 11:15:00</td>
+      <td>2023-01-13 11:16:00</td>
+      <td>2</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 11:25:00</td>
+      <td>2023-01-13 11:25:00</td>
+      <td>1</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 11:28:00</td>
+      <td>2023-01-13 11:29:00</td>
+      <td>2</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 11:35:00</td>
+      <td>2023-01-13 11:35:00</td>
+      <td>1</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 11:46:00</td>
+      <td>2023-01-13 11:47:00</td>
+      <td>2</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 11:53:00</td>
+      <td>2023-01-13 11:53:00</td>
+      <td>1</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 11:55:00</td>
+      <td>2023-01-13 11:55:00</td>
+      <td>1</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 12:04:00</td>
+      <td>2023-01-13 12:04:00</td>
+      <td>1</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 12:15:00</td>
+      <td>2023-01-13 12:15:00</td>
+      <td>1</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 12:26:00</td>
+      <td>2023-01-13 12:29:00</td>
+      <td>4</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 12:32:00</td>
+      <td>2023-01-13 12:32:00</td>
+      <td>1</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 12:34:00</td>
+      <td>2023-01-13 12:34:00</td>
+      <td>1</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 12:40:00</td>
+      <td>2023-01-13 12:45:00</td>
+      <td>6</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 12:47:00</td>
+      <td>2023-01-13 12:48:00</td>
+      <td>2</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 12:51:00</td>
+      <td>2023-01-13 12:52:00</td>
+      <td>2</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 12:54:00</td>
+      <td>2023-01-13 12:54:00</td>
+      <td>1</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 12:58:00</td>
+      <td>2023-01-13 13:02:00</td>
+      <td>5</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 13:07:00</td>
+      <td>2023-01-13 13:11:00</td>
+      <td>5</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 13:19:00</td>
+      <td>2023-01-13 13:22:00</td>
+      <td>4</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 13:24:00</td>
+      <td>2023-01-13 13:25:00</td>
+      <td>2</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 13:33:00</td>
+      <td>2023-01-13 13:37:00</td>
+      <td>5</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 13:40:00</td>
+      <td>2023-01-13 13:40:00</td>
+      <td>1</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 13:44:00</td>
+      <td>2023-01-13 13:48:00</td>
+      <td>5</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 13:53:00</td>
+      <td>2023-01-13 13:53:00</td>
+      <td>1</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 13:57:00</td>
+      <td>2023-01-13 13:58:00</td>
+      <td>2</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>HF5 - Structure (W/m2)</td>
+      <td>2023-01-13 14:01:00</td>
+      <td>2023-01-13 14:01:00</td>
+      <td>1</td>
+      <td>Data &lt; lower bound, -150</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-12 16:30:00</td>
+      <td>2023-01-12 16:31:00</td>
+      <td>2</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-12 16:49:00</td>
+      <td>2023-01-12 16:49:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-12 16:54:00</td>
+      <td>2023-01-12 16:54:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-12 17:21:00</td>
+      <td>2023-01-12 17:21:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 07:19:00</td>
+      <td>2023-01-13 07:20:00</td>
+      <td>2</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 07:26:00</td>
+      <td>2023-01-13 07:30:00</td>
+      <td>5</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 07:32:00</td>
+      <td>2023-01-13 07:33:00</td>
+      <td>2</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 07:41:00</td>
+      <td>2023-01-13 07:42:00</td>
+      <td>2</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>61</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 07:58:00</td>
+      <td>2023-01-13 07:59:00</td>
+      <td>2</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>62</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 08:04:00</td>
+      <td>2023-01-13 08:07:00</td>
+      <td>4</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>63</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 08:09:00</td>
+      <td>2023-01-13 08:10:00</td>
+      <td>2</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>64</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 08:12:00</td>
+      <td>2023-01-13 08:12:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>65</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 08:20:00</td>
+      <td>2023-01-13 08:21:00</td>
+      <td>2</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>66</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 08:24:00</td>
+      <td>2023-01-13 08:24:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>67</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 08:29:00</td>
+      <td>2023-01-13 08:32:00</td>
+      <td>4</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>68</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 08:35:00</td>
+      <td>2023-01-13 08:40:00</td>
+      <td>6</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>69</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 08:55:00</td>
+      <td>2023-01-13 08:56:00</td>
+      <td>2</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 09:18:00</td>
+      <td>2023-01-13 09:22:00</td>
+      <td>5</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 09:39:00</td>
+      <td>2023-01-13 09:41:00</td>
+      <td>3</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 09:45:00</td>
+      <td>2023-01-13 09:46:00</td>
+      <td>2</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 10:03:00</td>
+      <td>2023-01-13 10:03:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 10:08:00</td>
+      <td>2023-01-13 10:10:00</td>
+      <td>3</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>75</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 10:12:00</td>
+      <td>2023-01-13 10:13:00</td>
+      <td>2</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>76</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 10:15:00</td>
+      <td>2023-01-13 10:16:00</td>
+      <td>2</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>77</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 10:21:00</td>
+      <td>2023-01-13 10:22:00</td>
+      <td>2</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>78</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 10:34:00</td>
+      <td>2023-01-13 10:34:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>79</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 10:44:00</td>
+      <td>2023-01-13 10:49:00</td>
+      <td>6</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>80</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 10:52:00</td>
+      <td>2023-01-13 10:53:00</td>
+      <td>2</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>81</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 10:59:00</td>
+      <td>2023-01-13 11:00:00</td>
+      <td>2</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>82</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 11:09:00</td>
+      <td>2023-01-13 11:12:00</td>
+      <td>4</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>83</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 11:14:00</td>
+      <td>2023-01-13 11:14:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>84</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 11:16:00</td>
+      <td>2023-01-13 11:19:00</td>
+      <td>4</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>85</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 11:23:00</td>
+      <td>2023-01-13 11:23:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>86</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 11:25:00</td>
+      <td>2023-01-13 11:25:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>87</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 11:28:00</td>
+      <td>2023-01-13 11:29:00</td>
+      <td>2</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>88</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 11:47:00</td>
+      <td>2023-01-13 11:48:00</td>
+      <td>2</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>89</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 11:51:00</td>
+      <td>2023-01-13 11:56:00</td>
+      <td>6</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>90</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 12:06:00</td>
+      <td>2023-01-13 12:06:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>91</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 12:11:00</td>
+      <td>2023-01-13 12:11:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>92</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 12:14:00</td>
+      <td>2023-01-13 12:15:00</td>
+      <td>2</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>93</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 12:17:00</td>
+      <td>2023-01-13 12:17:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>94</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 12:19:00</td>
+      <td>2023-01-13 12:19:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>95</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 12:21:00</td>
+      <td>2023-01-13 12:22:00</td>
+      <td>2</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>96</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 12:28:00</td>
+      <td>2023-01-13 12:28:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>97</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 12:30:00</td>
+      <td>2023-01-13 12:31:00</td>
+      <td>2</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>98</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 12:35:00</td>
+      <td>2023-01-13 12:35:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>99</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 12:41:00</td>
+      <td>2023-01-13 12:42:00</td>
+      <td>2</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>100</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 12:45:00</td>
+      <td>2023-01-13 12:45:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>101</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 12:55:00</td>
+      <td>2023-01-13 12:55:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>102</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 13:02:00</td>
+      <td>2023-01-13 13:03:00</td>
+      <td>2</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>103</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 13:11:00</td>
+      <td>2023-01-13 13:11:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>104</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 13:28:00</td>
+      <td>2023-01-13 13:28:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>105</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 13:48:00</td>
+      <td>2023-01-13 13:48:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>106</th>
+      <td>Pyranometer (W/m2)</td>
+      <td>2023-01-13 13:57:00</td>
+      <td>2023-01-13 13:58:00</td>
+      <td>2</td>
+      <td>|Increment| &gt; upper bound, 100</td>
+    </tr>
+    <tr>
+      <th>107</th>
+      <td>T1 - Unshaded (degC)</td>
+      <td>2023-01-13 10:11:00</td>
+      <td>2023-01-13 10:11:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 3</td>
+    </tr>
+    <tr>
+      <th>108</th>
+      <td>T1 - Unshaded (degC)</td>
+      <td>2023-01-13 10:16:00</td>
+      <td>2023-01-13 10:17:00</td>
+      <td>2</td>
+      <td>|Increment| &gt; upper bound, 3</td>
+    </tr>
+    <tr>
+      <th>109</th>
+      <td>T1 - Unshaded (degC)</td>
+      <td>2023-01-13 10:46:00</td>
+      <td>2023-01-13 10:46:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 3</td>
+    </tr>
+    <tr>
+      <th>110</th>
+      <td>T1 - Unshaded (degC)</td>
+      <td>2023-01-13 10:59:00</td>
+      <td>2023-01-13 10:59:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 3</td>
+    </tr>
+    <tr>
+      <th>111</th>
+      <td>T1 - Unshaded (degC)</td>
+      <td>2023-01-13 11:09:00</td>
+      <td>2023-01-13 11:09:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 3</td>
+    </tr>
+    <tr>
+      <th>112</th>
+      <td>T1 - Unshaded (degC)</td>
+      <td>2023-01-13 11:54:00</td>
+      <td>2023-01-13 11:54:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 3</td>
+    </tr>
+    <tr>
+      <th>113</th>
+      <td>T1 - Unshaded (degC)</td>
+      <td>2023-01-13 12:09:00</td>
+      <td>2023-01-13 12:09:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 3</td>
+    </tr>
+    <tr>
+      <th>114</th>
+      <td>T1 - Unshaded (degC)</td>
+      <td>2023-01-13 12:15:00</td>
+      <td>2023-01-13 12:15:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 3</td>
+    </tr>
+    <tr>
+      <th>115</th>
+      <td>T1 - Unshaded (degC)</td>
+      <td>2023-01-13 12:30:00</td>
+      <td>2023-01-13 12:30:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 3</td>
+    </tr>
+    <tr>
+      <th>116</th>
+      <td>T1 - Unshaded (degC)</td>
+      <td>2023-01-13 13:42:00</td>
+      <td>2023-01-13 13:42:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 3</td>
+    </tr>
+    <tr>
+      <th>117</th>
+      <td>T1 - Unshaded (degC)</td>
+      <td>2023-01-13 13:57:00</td>
+      <td>2023-01-13 13:57:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 3</td>
+    </tr>
+    <tr>
+      <th>118</th>
+      <td>T2 - Shaded (degC)</td>
+      <td>2023-01-13 10:10:00</td>
+      <td>2023-01-13 10:11:00</td>
+      <td>2</td>
+      <td>|Increment| &gt; upper bound, 3</td>
+    </tr>
+    <tr>
+      <th>119</th>
+      <td>T2 - Shaded (degC)</td>
+      <td>2023-01-13 10:16:00</td>
+      <td>2023-01-13 10:16:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 3</td>
+    </tr>
+    <tr>
+      <th>120</th>
+      <td>T2 - Shaded (degC)</td>
+      <td>2023-01-13 10:46:00</td>
+      <td>2023-01-13 10:46:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 3</td>
+    </tr>
+    <tr>
+      <th>121</th>
+      <td>T2 - Shaded (degC)</td>
+      <td>2023-01-13 10:59:00</td>
+      <td>2023-01-13 10:59:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 3</td>
+    </tr>
+    <tr>
+      <th>122</th>
+      <td>T2 - Shaded (degC)</td>
+      <td>2023-01-13 11:09:00</td>
+      <td>2023-01-13 11:09:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 3</td>
+    </tr>
+    <tr>
+      <th>123</th>
+      <td>T2 - Shaded (degC)</td>
+      <td>2023-01-13 11:21:00</td>
+      <td>2023-01-13 11:21:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 3</td>
+    </tr>
+    <tr>
+      <th>124</th>
+      <td>T2 - Shaded (degC)</td>
+      <td>2023-01-13 11:54:00</td>
+      <td>2023-01-13 11:54:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 3</td>
+    </tr>
+    <tr>
+      <th>125</th>
+      <td>T2 - Shaded (degC)</td>
+      <td>2023-01-13 12:08:00</td>
+      <td>2023-01-13 12:08:00</td>
+      <td>1</td>
+      <td>|Increment| &gt; upper bound, 3</td>
+    </tr>
+  </tbody>
+</table>
+    <br>
+
+    
+        
+            <img src="/home/wsims1999/Downloads/Pecos_Shared/Quality Analysis Tool and Data Set/test_results0.png" alt="Image not loaded" width="800"><br>
+        
+    
+        
+            <img src="/home/wsims1999/Downloads/Pecos_Shared/Quality Analysis Tool and Data Set/test_results1.png" alt="Image not loaded" width="800"><br>
+        
+    
+        
+            <img src="/home/wsims1999/Downloads/Pecos_Shared/Quality Analysis Tool and Data Set/test_results2.png" alt="Image not loaded" width="800"><br>
+        
+    
+        
+            <img src="/home/wsims1999/Downloads/Pecos_Shared/Quality Analysis Tool and Data Set/test_results3.png" alt="Image not loaded" width="800"><br>
+        
+    
+        
+            <img src="/home/wsims1999/Downloads/Pecos_Shared/Quality Analysis Tool and Data Set/test_results4.png" alt="Image not loaded" width="800"><br>
+        
+    
+
+
+
+
+
+
+
+
+		<hr>Report generated by <A href="https://github.com/sandialabs/pecos">Pecos</A><br>
+ 		Version 0.2.0, Date 01/13/2023
+	
+
+
+</body>
+</html>

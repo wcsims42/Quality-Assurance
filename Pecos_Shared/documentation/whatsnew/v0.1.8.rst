@@ -1,0 +1,46 @@
+.. _whatsnew_0180:
+
+v0.1.8 (January 9, 2020)
+--------------------------
+
+* Added properties to the PerformanceMonitoring object to return the following:
+
+  * Boolean mask, ``pm.mask``.  Indicates data that failed a quality control test. This
+    replaces the method ``get_test_results_mask``(API change).
+  * Cleaned data, ``pm.cleaned_data``. Data that failed a quality control test are replaced by NaN.
+
+* Added the ability to run quality control tests as individual functions.  
+  These functions allow the user to use Pecos without creating a PerformanceMonitoring object.  
+  Each function returns cleaned data, a boolean mask, and a summary of quality control
+  test results.
+* io and graphics functions were updated to use specific components of the 
+  PerformanceMonitoring class (instead of requiring an instance of the class).
+  This changes the API for
+  ``write_monitoring_report``,
+  ``write_dashboard``, and
+  ``plot_test_results``. 
+* Filenames are now an optional parameter in io and graphics functions, this changes the API for 
+  ``write_metrics``, 
+  ``write_test_results``, and
+  ``plot_test_results``. 
+* Updated metrics:
+
+  * Added time_derivative which returns a derivative time series for each column of data
+  * ``qci``, ``rmse``, ``time_integral``, ``probability_of_detection``, and 
+    ``false_alarm_rate`` now return 1 value per column of data (API change)
+  * pv metrics were also updated to return 1 value per column (API change)
+  * Deprecated per_day option. Data can be grouped by custom time intervals before 
+    computing metrics (API change)
+
+* Efficiency improvements to ``check_delta``. As part of these changes, the optional input argument 
+  `absolute_value` has been removed and `direction` has been added (API change). If direction is set to positive, 
+  then the test only identify positive deltas (the min occurs before the max). If direction is set to negative, 
+  then the test only identify negative deltas (the max occurs before the min).
+* Timestamp indexes down to millisecond resolution are supported
+* Added additional helper functions in pecos.utils to convert to/from datetime indexes.
+  Methods ``get_elapsed_time`` and ``get_clock_time`` were removed from the PerformanceMonitoring class (API change).
+* Moved functionality to evaluate strings from the PerformanceMonitoring class into a stand alone utility function (API change).
+* Removed option to smooth data using a rolling mean within the quality control tests (API change).
+  Preprocessing steps should be done before the quality control test is run. 
+* Added Python 3.7 tests, dropped Python 2.7 and 3.5 tests
+* Updated examples, tests, and documentation

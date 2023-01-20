@@ -1,0 +1,11 @@
+.. _whatsnew_0120:
+
+v0.1.2 (June 6, 2016)
+-----------------------
+
+This is a minor release, changes include:
+
+* Minor changes to the software to support Python 3.4 and 3.5
+* Default image format changed from jpg to png
+* Datatables format options added to dashboards
+* Additional testing

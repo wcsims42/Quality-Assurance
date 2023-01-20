@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block head %}
+	<title>{{ title }}</title>
+	{% if datatables %}
+	<!-- datatables.net -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.11/css/jquery.dataTables.css">
+	{% endif %}
+	{{ super() }}
+{% endblock %}
+
+{% block body %}
+<table border="0" width="100%">
+<col style="width:70%">
+<col style="width:30%">
+<tr>
+<td align="left" valign="center">
+{% if logo %}
+    <img  src="{{ logo }}" alt='Logo' />
+{% endif %}
+</td>
+<td align="right" valign="center">
+</td>
+</tr>
+</table>
+<hr>
+<H2>{{ title }}</H2>
+{% if datatables %}
+	<table id="myTable" border="1" class="dataframe display">
+{% else %}
+	<table border="1" class="dataframe">
+{% endif %}
+		<thead>
+			<tr>
+				<th></th>
+				{% for column in column_names %}
+					<th align="center" valign="middle"> {{ column }} </th>
+				{% endfor %}
+			</tr>
+		</thead>
+		<tbody>
+		{% for row in row_names %}
+			<tr>
+				<th align="center" valign="middle">{{ row }}</th>
+				{% for column in column_names %}
+					<td align="center" valign="middle">
+						{% if content[row, column]['text'] %}
+							{{ content[row, column]['text'] }} <br>
+						{% endif %}
+						{% if content[row, column]['graphics'] %}
+							{% for im in content[row, column]['graphics'] %}
+								{% if encode %}
+									<img src="data:image/png;base64,{{ img_dic[im] }}" alt='Image not loaded' width="{{ im_width }}"><br>
+								{% else %}
+									<img src="{{ im }}" alt="Image not loaded" width="{{ im_width }}"><br>
+								{% endif %}
+							{% endfor %}
+						{% endif %}
+						{% if content[row, column]['table'] %}
+							{{ content[row, column]['table'] }} <br>
+						{% endif %}
+						{% if content[row, column]['link'] %}
+							{% for link_text, link_html in content[row, column]['link'].items() %}
+								<A href="{{ link_html }}">{{ link_text }}</A><br>
+							{% endfor %}
+						{% endif %}
+					</td>
+				{% endfor %}
+			</tr>
+		{% endfor %}
+		</tbody>
+	</table>
+	<br>
+	{{ footnote }}<br><br>
+	<hr>
+    {{ super() }}
+
+	{% if datatables %}
+		<!-- jQuery (necessary for datatables.net) -->
+        <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>  
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.js"></script>
+        <script>
+            $(document).ready(function(){
+            $('#myTable').DataTable();
+        });
+        </script>
+	{% endif %}
+{% endblock %}

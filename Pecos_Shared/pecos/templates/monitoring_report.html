@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+<body style="background-color:white;">
+
+{% block head %}
+    <title>{{ title }}</title>
+    {{ super() }}
+{% endblock %}
+
+{% block body %}
+<table border="0" width="100%">
+<col style="width:70%">
+<col style="width:30%">
+<tr>
+<td align="left" valign="center">
+{% if logo %}
+    <H2><img  src="{{ logo }}" alt='Logo' width="{{ im_width_logo }}"> {{ title }}</H2>
+{% else %}
+    <H2>{{ title }}</H2>
+{% endif %}
+</td>
+<td align="right" valign="center">
+</td>
+</tr>
+</table>
+<hr>
+
+Data start time: {{ content['start_time'] }} <br>
+Data end time:  {{ content['end_time'] }} <br>
+Number of variables: {{ content['num_data_columns']}} <br>    
+Number of test failures: {{ content['num_test_results'] }} <br>   
+<br>
+
+{% for im in content['custom_graphics'] %}
+    {% if encode %}
+        <img src="data:image/png;base64,{{ img_dic[im] }}" alt='Image not loaded' width="{{ im_width_custom }}"><br>
+    {% else %}
+        <img src="{{ im }}" alt="Image not loaded" width="{{ im_width_custom }}"><br>
+    {% endif %}
+{% endfor %}
+
+{% if content['num_metrics']|int > 0 %}
+    <H3>Performance Metrics:</H3>
+    {{ content['metrics'] }}
+    <br>
+{% endif %}
+
+{% if content['num_test_results']|int > 0 %}
+    <H3>Test Results:</H3>
+    {{ content['test_results'] }}
+    <br>
+
+    {% for im in content['test_results_graphics'] %}
+        {% if encode %}
+            <img src="data:image/png;base64,{{ img_dic[im] }}" alt='Image not loaded' width="{{ im_width_test_results }}"><br>
+        {% else %}
+            <img src="{{ im }}" alt="Image not loaded" width="{{ im_width_test_results }}"><br>
+        {% endif %}
+    {% endfor %}
+
+{% endif %}
+
+{% if content['num_notes']|int > 0 %}
+    <H3>Notes:</H3>
+    {{ content['notes'] }}
+    <br>
+{% endif %}
+
+{% if content['config'] %}
+    <b>Configuration Options:</b><br>
+    <pre>{{ content['config'] }}</pre><br><br>
+{% endif %}
+
+{{ super() }}
+
+{% endblock %}

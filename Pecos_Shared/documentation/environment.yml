@@ -1,0 +1,10 @@
+name: pecos
+dependencies:
+    - python=3.6
+    - numpy
+    - pandas
+    - pytz
+    - ephem
+    - sphinx
+    - numpydoc
+    - matplotlib

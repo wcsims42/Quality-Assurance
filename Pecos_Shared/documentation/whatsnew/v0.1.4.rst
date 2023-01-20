@@ -1,0 +1,17 @@
+.. _whatsnew_0140:
+
+v0.1.4 (December 15, 2016)
+---------------------------
+
+Some of the changes in this release are not backward compatible:
+
+* Added capability to allow multiple html links in dashboards (API change).
+* Updated send_email function to use smptlib (API change).
+* Added additional options in html reports to set figure size and image width.
+* Bug fix setting axis limits in figures.
+* Bug fix for reporting duplicate time steps.  
+* Improved efficiency for get_clock_time function.
+* Added dashboard example that uses color blocks to indicate number of
+  test failures.
+* Removed basic_pvlib_performance_model, the pv_example now uses 
+  pvlib directly to compute a basic model (API change).

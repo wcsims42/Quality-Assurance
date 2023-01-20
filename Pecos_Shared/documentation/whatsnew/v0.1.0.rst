@@ -1,0 +1,25 @@
+.. _whatsnew_0100:
+
+v0.1.0 (March 31, 2016)
+-----------------------
+
+This is the first official release of Pecos.  Features include:
+
+* PerformanceMonitoring class used to run quality control tests and store
+  results.  The class includes the ability to add time filters and 
+  translation dictionaries.  Quality control tests include checks for 
+  timestamp, missing and corrupt data, data out of range, and increment data 
+  out of range.
+
+* Quality control index used to quantify test failures
+
+* HTML report templates for monitoring reports and dashboards
+
+* Graphics capabilities
+
+* Basic tutorials
+
+* Preliminary software test harness, run using nosetests
+
+* Basic user manual including API documentation
+
